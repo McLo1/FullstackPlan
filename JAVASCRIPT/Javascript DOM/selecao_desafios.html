@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dselecao_desafios</title>
+</head>
+<body>
+    
+    <p class="TodosElementos">Criando um contéudo que será modificado</p>
+    <p id="NovaClasse">Esse elemento terá uma nova classe</p>
+    <h1 class="TodosElementos">Olá</h1>
+    <h2 id="NovaClasse">Hey</h2>
+
+
+    <script>
+
+    let classes = document.querySelectorAll('.TodosElementos');
+
+
+classes.forEach(classes => {
+    classes.style.color = "whitesmoke";
+    classes.style.backgroundColor = "black";
+    classes.style.padding = "15px";
+    classes.style.borderRadius = "15px";
+    classes.style.width = "100px"
+    classes.style.textAlign = "center"
+});
+
+let NewClasse = document.getElementById('NovaClasse');
+
+NewClasse.classList.add("ClasseNova");
+
+let tagsCont = document.querySelectorAll('p');
+
+tagsCont.forEach(tagsCont => {
+    tagsCont.textContent = 'Novo conteudo digitado';
+    tagsCont.style.color = 'blue';
+})
+
+let AmbosElementos = document.querySelectorAll('.TodosElementos, #NovaClasse');
+
+AmbosElementos.forEach(AmbosElementos => {
+    AmbosElementos.style.color = "whitesmoke";
+    AmbosElementos.style.backgroundColor = "black";
+    AmbosElementos.style.padding = "15px";
+    AmbosElementos.style.borderRadius = "15px";
+    AmbosElementos.style.width = "100px"
+    AmbosElementos.style.textAlign = "center"
+})
+
+ 
+
+    </script>
+
+</body>
+</html>

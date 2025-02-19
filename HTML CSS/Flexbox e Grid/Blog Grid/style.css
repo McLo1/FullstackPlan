@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: rgb(69, 69, 69);
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+    gap: 300px;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header .nav {
+    display: flex;
+}
+
+header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+header .nav a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+header .nav a:hover {
+    background-color: rgb(69, 69, 69);
+    transition: 0.3s ease;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+header .botões {
+    display: flex;
+    gap: 10px;
+}
+
+.Botão {
+    padding: 15px;
+    color: whitesmoke;
+}
+
+.Botão:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.Botão:nth-child(2) {
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    border: none;
+}
+
+.Botão:nth-child(2):hover {
+    background-color: rgb(69, 69, 69);
+    transition: 0.2s ease-in-out;
+}
+
+
+main {
+    display: grid;
+    flex-direction: column;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "footer footer footer";
+    margin-bottom: 15px;
+}
+
+main .Sidebar {
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+    font-size: 20px;
+    width: 100px;
+    padding: 20px;
+    text-align: start;
+}
+
+main .Sidebar ul {
+    list-style: none;
+}
+
+main .Sidebar ul a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+main .Sidebar ul li {
+    margin-bottom: 10px;
+}
+
+main .post {
+    display: grid;
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+    width: 780px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+main .post span {
+    font-size: 15px;
+
+}
+
+main .ImgTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+main .Conteudo {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main .ContainerPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    gap: 40px;
+}
+
+
+
+
+footer {
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+    padding: 35px;
+    text-align: center;
+    height: 80px;
+}
+
+
+@media(max-width: 320px) {
+
+    .Container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        padding: 15px 20px;
+        align-items: center;
+        background-color: rgb(21, 21, 21);
+        color: whitesmoke;
+        gap: 50px;
+    }
+
+    header .logo {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    header {
+        width: 380px;
+
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    .Sidebar {
+        display: none;
+    }
+
+    main .ImgTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 15px;
+        gap: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 13px;
+        text-align: start;
+        width: 200px;
+    }
+
+    .imagensPost{
+        width: 200px;
+    }
+
+
+    main .post {
+        display: grid;
+        background-color: rgb(21, 21, 21);
+        color: whitesmoke;
+        width: 365px;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    main .Conteudo{
+        font-size: 12px;
+    }
+
+    footer{
+        width: 380px;
+    }
+
+    main .ContainerPrincipal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        gap: 40px;
+    }
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManipulandoEventos2</title>
+</head>
+<body>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            font-family: monospace;
+            font-size: 20px;
+            text-align: center;
+        }
+        p{
+            font-family: monospace;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        header{
+            background-color: aquamarine;
+            padding: 20px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background-color: aquamarine;
+            width: 350px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            gap: 7px;
+        }
+
+        #LoginForm{
+            font-size: 45px;
+            padding: 30px;
+        }
+
+        input{
+            padding: 10px;
+        }
+        button{
+            padding: 10px;
+        }
+
+    #MensagemLogin{
+        background-color: rgb(4, 171, 4);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        width: 330px;
+        padding: 15px;
+        transform: translateX(1000px);
+        display: none;
+    }
+
+    </style>
+
+
+    <header>
+        <h1>Validação de formulario</h1>
+        <p>Atividade número 5 do PDF fullstack pro</p>
+    </header>
+
+
+    <main>
+        <form action="submit" id="Forms">
+
+            <h1 id="LoginForm">Login</h1>
+
+            <input type="text" name="InsiraNome" id="InsiraNome" placeholder="Insira o seu nome" title="É necessário inserir o seu nome" required>
+            <input type="password" id="InsiraSenha" placeholder="Insira a sua senha" title="É necessário inserir a senha para entrar" required>
+            <button id="RealizarLogin">Entrar</button>
+
+
+        </form>
+
+        <section id="MensagemLogin">
+            <h2>Login relizado com sucesso</h2>
+        </section>
+
+    </main>
+
+<script>
+    let botãoLogin = document.getElementById('RealizarLogin');
+    let formulario = document.getElementById('Forms');
+
+
+    formulario.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let MensagemLogin = document.getElementById('MensagemLogin');
+        let InsiraNome = document.getElementById('InsiraNome');
+        let InsiraSenha = document.getElementById('InsiraSenha');
+
+        if(InsiraNome.value.length && InsiraSenha.value.length > 0){
+            MensagemLogin.style.display = 'block';
+        }
+
+
+    })
+
+</script>
+</body>
+</html>

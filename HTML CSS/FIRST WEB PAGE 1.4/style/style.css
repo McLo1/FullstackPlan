@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.0;
+    color: #333;
+    padding: 20px;
+}
+
+
+
+header{
+    width: 700px;
+    background: #333;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 20px;    
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+header h1{
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    margin-bottom: 10px;
+}
+
+header nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+section h2{
+    margin-bottom: 10px;
+}
+
+section p, section ul{
+    margin-bottom: 10px;
+}
+
+section ul{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+footer{
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 550px;
+    padding: 10px 0px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p{
+    margin-left: 30px;
+    text-align: center;
+}
+
+footer #icons{
+
+
+    text-align: center;
+    text-decoration: none;
+    margin-left: 50px;
+    
+}
+
+footer #icons a{
+
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    
+} 
+
+section img{
+    width: 70px;
+    height: 70px;
+}
+
+#Sobre {
+    width: 600px;
+    height: 100px;
+    background: #333;
+    color: #fff;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex; /* Layout em linha */
+    align-items: center; /* Alinha os itens ao topo */
+    gap: 50px; /* Espaço entre a imagem e o texto */
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#Sobre img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Imagem circular */
+}
+
+#Sobre div {
+    display: flex;
+    flex-direction: column; /* Organiza h2 e p em coluna */
+    justify-content: flex-start; /* Alinha o texto no topo */
+}
+
+
+#Serviços{
+
+    color: #fff;
+    background-color: #333;
+    width: 500px;
+    padding: 20px 5px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Serviços h2{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#Serviços li{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#Contato{
+    color: #fff;
+    background-color: #333;
+    width: 600px;
+    padding: 20px 5px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Contato h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#Contato li{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}

@@ -1,0 +1,111 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Conteúdo Principal */
+main {
+    margin: 20px 0;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 5px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333333;
+    color: #ffffff;
+}
+
+section{
+    background-color: #333333;
+    color: #cccccc;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 15px;
+}

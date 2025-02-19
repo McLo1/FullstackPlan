@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #3C0B0B;
+    color: white;
+    padding: 30px;
+    margin-bottom: 29px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: #651212;
+    padding: 5px;
+    border-radius: 10px;
+}
+

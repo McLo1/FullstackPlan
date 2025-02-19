@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos interativos</title>
+</head>
+<body>
+    
+
+    <p id="paragrafo">Este é um paragrafo que será alterado</p>
+
+    <button id="Interatividade">MudarTexto</button>
+
+    <br>
+    <br>
+
+    <img src="images.jpg" alt="ImagemExemplo" id="ImagemExemplo">
+
+    
+    <br>
+    <br>
+
+    <input type="text" id="CampoTexto" placeholder="Digite algo...">
+    <span id="contadorCarac">0</span>
+
+
+    <script>
+        let botaoparagrafo = document.getElementById('Interatividade');
+        let paragrafo = document.getElementById('paragrafo')
+
+        botaoparagrafo.addEventListener("click", () => {
+            paragrafo.innerHTML = "O texto foi alterado";
+        });
+
+        let imagem = document.getElementById('ImagemExemplo');
+
+        imagem.addEventListener("mouseover", () => {
+            imagem.style.opacity = '0.5';
+            imagem.style.transition = '0.5s ease';
+        });
+        
+        imagem.addEventListener("mouseout", () => {
+            imagem.style.opacity = '1';
+            imagem.style.transition = '0.5s ease';
+        });
+
+
+        let CampoTexto = document.getElementById('CampoTexto');
+        let contadorCarac = document.getElementById('contadorCarac');
+
+        function atualizarContagem(){
+            contadorCarac.textContent = CampoTexto.value.length;
+        }
+    
+        CampoTexto.addEventListener("keydown", atualizarContagem);
+        CampoTexto.addEventListener("keyup", atualizarContagem);
+
+    </script>
+
+</body>
+</html>

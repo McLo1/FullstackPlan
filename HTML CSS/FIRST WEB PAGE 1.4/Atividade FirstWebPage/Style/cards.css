@@ -1,0 +1,30 @@
+main #Projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+main #Projeto{
+    background-color: rgb(165, 165, 165);
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+main #ProjetoHead{
+    height: 55px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 18px;
+}
+
+main #ProjetoBody{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}

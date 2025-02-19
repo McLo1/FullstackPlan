@@ -1,0 +1,163 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: dimgray;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer {
+    background-color: dimgray;
+    text-align: center;
+    color: whitesmoke;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.Gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+img {
+    padding: 16px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.579));
+}
+
+.colunas{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.coluna1{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+}
+.coluna2{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+}
+
+@media(max-width: 768px) {
+
+    img {
+        width: 250px;
+    }
+
+    * {
+        font-size: 13px;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+
+    body {
+        background-color: rgb(89, 255, 0);
+    }
+
+    a {
+        color: rgb(51, 0, 255);
+    }
+
+    header {
+        background-color: rgb(255, 0, 217);
+    }
+
+    img {
+        border-radius: 40px;
+    }
+
+    .coluna1{
+        background-color: rgb(36, 78, 29);
+        width: 300px;
+        height: 300px;
+    }
+    .coluna2{
+        background-color: rgb(87, 127, 35);
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
+@media(max-width: 320px) {
+
+    body {
+        background-color: brown;
+    }
+
+    a {
+        color: rgb(0, 255, 128);
+    }
+
+    header {
+        background-color: blue;
+    }
+
+    img {
+        border-radius: 40px;
+    }
+
+
+    .coluna1{
+        background-color: rgb(29, 78, 78);
+        width: 200px;
+        height: 200px;
+    }
+    .coluna2{
+        background-color: rgb(35, 127, 127);
+        width: 200px;
+        height: 200px;
+    }
+
+
+}
+
+@media(min-width: 790px) {
+
+    body {
+        background-color: rgb(42, 165, 163);
+    }
+
+    a {
+        color: rgb(255, 0, 195);
+    }
+
+    header {
+        background-color: rgb(255, 251, 0);
+    }
+
+    img {
+        border-radius: 40px;
+    }
+
+}

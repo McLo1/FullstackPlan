@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="/submit" method="post">
+
+        <h1>Cadastro</h1>
+
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" pattern=".{6,}" title="A senha deve ter pelo menos 6 caracteres" required>
+
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="telefone">Telefone: </label>
+        <input type="tel" name="telefone" id="telefone">
+
+        <label for="mensagem">Mensagem: </label>
+        <textarea name="mensagem" id="mensagem" rows="4" cols="50" required></textarea>
+
+        <label for="select">Paises</label>
+        <select name="select" id="select">
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Japão">Japão</option>
+
+        </select>
+
+        <label for="sexo">Gêneros</label>
+    <section class="Generos">
+
+        <input type="radio" id="Masculino" name="sexo" value="Masculino">
+        <label for="Masculino">Masculino</label>
+
+        <input type="radio" id="Feminino" name="sexo" value="Feminino">
+        <label for="Feminino">Feminino</label>
+
+    </section>
+
+        <label for="submit"></label>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+</html>

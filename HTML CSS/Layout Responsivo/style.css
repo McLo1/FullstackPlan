@@ -1,0 +1,79 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Conteúdo Principal */
+main {
+    margin: 20px 0;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+}

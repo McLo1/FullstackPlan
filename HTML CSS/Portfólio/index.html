@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/carroulsel.css">
+    <script src="script/script.js" defer></script>
+    <title>Portfólio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre">
+            <img src="img/e-RUi11F_400x400.jpg" class="profile" alt="Profile" width="100px" height="100px">
+            <div>
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Marcelo e sou um desenvolvedor web apaixonado
+        por criar soluções criativas e eficientes.</p>
+    </div>
+        </section>
+        <div class="caracteristicas">
+        <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+        <li>Desenvolvimento de Websites</li>
+        <li>Design Responsivo</li>
+        <li>Otimização de Performance</li>
+        </ul>
+        </section>
+
+        <section id="tecnologia">
+        <h2>Tecnologias</h2>
+        <ul>
+        <li>React</li>
+        <li>NestJS</li>
+        <li>MySQL</li>
+        </ul>
+        </section>
+    </div>
+
+        <div id="projetos">
+            <h2>Projetos</h2>
+
+            <div class="ProjetosFeitos">
+
+        <div class="projeto">
+        <h3>Portfolio</h3>
+        <p>Consiste em ser um projeto onde o desenvolvedor podera compartilhar seus projetos e conhecimento 
+            em busca de clientes para enriquecer seu conhecimento profissiona</p>
+        </div>
+
+        <div class="projeto">
+        <h3>Wiki para Devs Web</h3>
+        <p>Consiste em ser uma página dedicada aos desenvolvedores web, apaixonados por tecnologias web e que buscam criar
+            conexões, networking, podendo compartilhar vagas e conhecimento, todos serão bem vindos</p>
+        </div>
+
+        <div class="projeto">
+        <h3>Freelancers</h3>
+        <p>Como desenvolvedor fullstack, presto serviços para a comunidade, pequenas e medias empresas criando soluções com códigos e café</p>
+        </div>
+
+    </div>
+        </div>
+
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="/submit" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required
+            ></textarea>
+            <button type="submit" class="submit">Enviar</button>
+            </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Marcelo. Todos os direitos reservados.</p>
+            </footer>
+        
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(227, 224, 222);
+
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 200px;
+    background-color: rgb(116, 114, 111);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+header nav{
+
+    padding: 30px;
+    width: 700px;
+    background-color: #ffffff39;
+    border-radius: 30px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+
+header #headerList li{
+    display: inline;
+    margin-right: 35px;
+}
+
+header #headerList li a{
+    color: black;
+    text-decoration: none;
+}
+
+#ProjetosH1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:groove;
+    border-radius: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(116, 114, 111);
+    width: 300px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px auto;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(116, 114, 111);
+    height: 150px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+footer ul{
+    padding-top: 18px;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer ul li{   
+    padding-right: 10px;
+    display: inline;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#Tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#Tudo a{
+
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+#Links{
+    background-color: rgb(116, 114, 111);
+    display: inline;
+    padding: 15px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: outset;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#Tudo img {
+    margin-bottom: 30px;
+    width: 400px;
+    height: auto;
+}
+
+#ImagemLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ImagemLink img{
+    width: 300px;
+    height: 300px;
+}

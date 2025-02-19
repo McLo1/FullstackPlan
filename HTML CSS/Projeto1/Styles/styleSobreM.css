@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.299);
+    padding: 30px;
+    width: 750px;
+    border-radius: 60px;
+    margin: 0 auto;
+}
+
+.Text{
+    text-align: left;
+    font-style: oblique;
+}
+
+
+img{
+    border-radius: 150px;
+}
+
+nav{
+    transform: translateY(150px);
+}

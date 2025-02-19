@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(26, 26, 26);
+    color: whitesmoke;
+}
+
+header {
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+}
+
+.headerprincipal{
+    background-color: rgb(45, 45, 45);
+    width: 500px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.HeaderInformacoes{
+    background-color: rgb(45, 45, 45);
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.ValorRestante{
+    background-color: rgb(45, 45, 45);
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+header h1{
+    text-align: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+header nav ul li a:hover{
+    background-color: rgb(135, 135, 135);
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    color: whitesmoke;
+}
+
+aside{
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    width: 100px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+aside li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+aside li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+main{
+    display: grid;
+    flex-direction: column;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    margin-bottom: 30px;
+    flex: 1;
+    min-height: 100vh;
+    margin: 15px;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: rgb(45, 45, 45);
+    text-align: center;
+    padding: 10px;
+}
+
+.graficos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 15px;
+}
