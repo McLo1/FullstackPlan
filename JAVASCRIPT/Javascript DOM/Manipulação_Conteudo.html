@@ -7,6 +7,16 @@
     <title>Manipulação_Conteudo</title>
 </head>
 
+    <style>
+        .bodyDiv{
+            background-color: black;
+        }
+
+        .textWhite{
+            color: white;
+        }
+    </style>
+
 <body>
 
     <div id="corpo">
@@ -23,7 +33,12 @@
         <button id="ClasseToogle">Clique AQUI!</button>
         <button id="Modo_Escuro">Dark MODE</button>
 
+
     </div>
+    <hr>
+
+
+
 
     <script>
 
@@ -63,7 +78,10 @@
 
         Dark.addEventListener("click", () => {
 
-            corpo.style.setProperty('background-color', 'black');
+            corpo.classList.toggle("bodyDiv");
+            conteudo.classList.toggle("textWhite");
+            tittle.classList.toggle("textWhite");
+            
 
         });
 
